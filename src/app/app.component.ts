@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PickupInfoService } from './pickup-info.service';
 import {Pickup} from './pickup';
-
+//hi rohan
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
