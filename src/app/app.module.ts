@@ -24,13 +24,15 @@ import { ExampleInfoPage1Component } from './example-1/example-info-page-1/examp
 import { PickupInfoService } from './pickup-info.service';
 import { DeliveryDetailsComponent } from './delivery-details/delivery-details.component';
 import { TaskService } from './task.service';
+import { DonationViewComponent } from './donation-view/donation-view.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/search', pathMatch: 'full' },
   {path:'list', component: ListComponent},
   {path:'example1', component: ExampleInfoPage1Component},
   {path:'search', component: SearchComponent},
-  {path:'details/:taskID', component: DeliveryDetailsComponent}
+  {path:'details/:taskID', component: DeliveryDetailsComponent},
+  {path:'book-entry', component: DonationViewComponent},
 ];
 
 @NgModule({
@@ -55,8 +57,8 @@ const routes: Routes = [
     ExampleDelivery1Component, 
     DriverSectionComponent, 
     ExampleInfoPage1Component, 
-    DeliveryDetailsComponent
-
+    DeliveryDetailsComponent,
+    DonationViewComponent
     ],
 
   bootstrap:    [ AppComponent ],
