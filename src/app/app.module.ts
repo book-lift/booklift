@@ -25,6 +25,8 @@ import { PickupInfoService } from './pickup-info.service';
 import { DeliveryDetailsComponent } from './delivery-details/delivery-details.component';
 import { TaskService } from './task.service';
 import { DonationViewComponent } from './donation-view/donation-view.component';
+import { DriverOverviewViewComponent } from './driver/overview/view/view.component';
+import { GoalComponent } from './driver/overview/goal/goal.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/search', pathMatch: 'full' },
@@ -33,6 +35,7 @@ const routes: Routes = [
   {path:'search', component: SearchComponent},
   {path:'details/:taskID', component: DeliveryDetailsComponent},
   {path:'book-entry', component: DonationViewComponent},
+  {path:'driver/overview', component: DriverOverviewViewComponent}
 ];
 
 @NgModule({
@@ -58,7 +61,9 @@ const routes: Routes = [
     DriverSectionComponent, 
     ExampleInfoPage1Component, 
     DeliveryDetailsComponent,
-    DonationViewComponent
+    DonationViewComponent,
+    DriverOverviewViewComponent,
+    GoalComponent,
     ],
 
   bootstrap:    [ AppComponent ],

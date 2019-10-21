@@ -1,0 +1,17 @@
+<svg
+    [attr.height]="radius * 2"
+    [attr.width]="radius * 2"
+  >
+    <circle
+      stroke="green"
+      fill="transparent"
+      [attr.stroke-dasharray]="circumference + ' ' + circumference"
+      stroke-linecap="round"
+      [style.strokeDashoffset]="strokeDashOffset"
+      [attr.stroke-width]="stroke"
+      [attr.r]="normalizedRadius"
+      [attr.cx]="radius"
+      [attr.cy]="radius"
+      [attr.transform]="'rotate(-90 ' + radius + ' ' + radius + ')'"
+    />
+</svg>
