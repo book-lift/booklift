@@ -24,7 +24,7 @@ import { ExampleInfoPage1Component } from './example-1/example-info-page-1/examp
 import { PickupInfoService } from './pickup-info.service';
 import { DeliveryDetailsComponent } from './driver/delivery-details/delivery-details.component';
 import { TaskService } from './task.service';
-import { DonationViewComponent } from './donation-view/donation-view.component';
+import { DonationViewComponent } from './donor/donation-view/donation-view.component';
 import { DriverOverviewViewComponent } from './driver/driver-dash/view/view.component';
 import { GoalComponent } from './driver/driver-dash/goal/goal.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
