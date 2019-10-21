@@ -15,18 +15,18 @@ import { HttpClientModule }    from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { SearchComponent } from './search/search.component';
-import { ListComponent } from './list/list.component';
+import { SearchComponent } from './driver/search/search.component';
+import { ListComponent } from './driver/list/list.component';
 import { ExamplePickup1Component } from './example-1/example-pickup-1/example-pickup-1.component';
 import { ExampleDelivery1Component } from './example-1/example-delivery-1/example-delivery-1.component';
-import { DriverSectionComponent } from './driver-section/driver-section.component';
+import { DriverSectionComponent } from './driver/driver-section/driver-section.component';
 import { ExampleInfoPage1Component } from './example-1/example-info-page-1/example-info-page-1.component';
 import { PickupInfoService } from './pickup-info.service';
-import { DeliveryDetailsComponent } from './delivery-details/delivery-details.component';
+import { DeliveryDetailsComponent } from './driver/delivery-details/delivery-details.component';
 import { TaskService } from './task.service';
 import { DonationViewComponent } from './donation-view/donation-view.component';
-import { DriverOverviewViewComponent } from './driver/overview/view/view.component';
-import { GoalComponent } from './driver/overview/goal/goal.component';
+import { DriverOverviewViewComponent } from './driver/driver-dash/view/view.component';
+import { GoalComponent } from './driver/driver-dash/goal/goal.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/search', pathMatch: 'full' },

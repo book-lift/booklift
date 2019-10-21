@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Pickup} from '../pickup';
 import {PICKUP} from '../PickupDB';
-import { PickupInfoService } from '../pickup-info.service';
+import { PickupInfoService } from '../../pickup-info.service';
 
 // import { Router } from '@angular/router';
 

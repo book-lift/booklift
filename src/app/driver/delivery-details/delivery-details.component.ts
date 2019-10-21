@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { PickupInfoService } from '../pickup-info.service';
+import { PickupInfoService } from '../../pickup-info.service';
 import { Pickup } from '../pickup';
 import { Delivery } from '../delivery'
 
