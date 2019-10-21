@@ -27,14 +27,15 @@ import { TaskService } from './task.service';
 import { DonationViewComponent } from './donation-view/donation-view.component';
 import { DriverOverviewViewComponent } from './driver/driver-dash/view/view.component';
 import { GoalComponent } from './driver/driver-dash/goal/goal.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/search', pathMatch: 'full' },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   {path:'list', component: ListComponent},
   {path:'example1', component: ExampleInfoPage1Component},
   {path:'search', component: SearchComponent},
   {path:'details/:taskID', component: DeliveryDetailsComponent},
-  {path:'book-entry', component: DonationViewComponent},
+  {path:'donor/book-entry', component: DonationViewComponent},
   {path:'driver/overview', component: DriverOverviewViewComponent}
 ];
 
@@ -64,6 +65,7 @@ const routes: Routes = [
     DonationViewComponent,
     DriverOverviewViewComponent,
     GoalComponent,
+    DashboardComponent,
     ],
 
   bootstrap:    [ AppComponent ],
