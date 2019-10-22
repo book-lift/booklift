@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { NumericInput } from '@angular/numeric-keyboard'
+
+
 @Component({
   selector: 'app-donation-view',
   templateUrl: './donation-view.component.html',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DonationViewComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {
   }
+  isShown: boolean = false ; // hidden by default
 
+
+toggleShow() {
+
+this.isShown = ! this.isShown;
+
+}
 }

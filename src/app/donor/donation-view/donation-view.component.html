@@ -3,6 +3,10 @@
   <button class="clear-button hidden">Clear</button>
 </div>
 
+<button>
+<a routerLink="/dashboard">Back</a>
+</button>
+
 <div id="donation-view--number-input-container">
   <span data-id="1">1</span>
   <span data-id="2">2</span>
@@ -18,8 +22,30 @@
 
 <button id="donation-view--donate-button">Donate</button>
 
-<button id="donation-view--instructions-button">+ Add instructions</button>
+<!-- <button id="donation-view--instructions-button">+ Add instructions</button> -->
+<button (click)="toggleShow()" type="checkbox" >+ Instructions</button>
 
-<button>
-<a routerLink="/dashboard">Back</a>
-</button>
+<div *ngIf="isShown" class="row container-fluid"  id="divshow" >
+<h2>Pickup Info</h2>
+
+  <div>
+          <label>Address: </label>
+          <input placeholder="861 Regulus St. CA, 94404"/>
+  </div>
+
+  <div class="additional_instructions">
+          <label>Additional Instructions: </label>
+          <input placeholder="I.e. Ring the doorbell to pickup books"/>
+  </div>
+
+</div>
+
+<!-- <div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">X</div>
+        <p>Add any HTML content<br />inside the popup box!</p>
+    </div>
+</div> -->
+
+
