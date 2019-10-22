@@ -23,22 +23,7 @@
 <button id="donation-view--donate-button">Donate</button>
 
 <!-- <button id="donation-view--instructions-button">+ Add instructions</button> -->
-<button (click)="toggleShow()" type="checkbox" >+ Instructions</button>
-
-<div *ngIf="isShown" class="row container-fluid"  id="divshow" >
-<h2>Pickup Info</h2>
-
-  <div>
-          <label>Address: </label>
-          <input placeholder="861 Regulus St. CA, 94404"/>
-  </div>
-
-  <div class="additional_instructions">
-          <label>Additional Instructions: </label>
-          <input placeholder="I.e. Ring the doorbell to pickup books"/>
-  </div>
-
-</div>
+<app-donor-instructions></app-donor-instructions>
 
 <!-- <div class="hover_bkgr_fricc">
     <span class="helper"></span>

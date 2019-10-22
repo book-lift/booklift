@@ -28,6 +28,7 @@ import { DonationViewComponent } from './donor/donation-view/donation-view.compo
 import { DriverOverviewViewComponent } from './driver/driver-dash/view/view.component';
 import { GoalComponent } from './driver/driver-dash/goal/goal.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DonorInstructionsComponent } from './donor/donor-instructions/donor-instructions.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -67,6 +68,7 @@ const routes: Routes = [
     DriverOverviewViewComponent,
     GoalComponent,
     DashboardComponent,
+    DonorInstructionsComponent,
     ],
 
   bootstrap:    [ AppComponent ],

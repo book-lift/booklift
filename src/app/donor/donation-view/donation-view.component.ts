@@ -15,12 +15,5 @@ export class DonationViewComponent implements OnInit {
 
   ngOnInit() {
   }
-  isShown: boolean = false ; // hidden by default
-
-
-toggleShow() {
-
-this.isShown = ! this.isShown;
-
-}
+  
 }
