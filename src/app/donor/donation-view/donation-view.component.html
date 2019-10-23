@@ -1,6 +1,6 @@
 <div id="donation-view--number-input-display">
-  <span class="display">How many books would you like to donate?</span>
-  <button class="clear-button hidden">Clear</button>
+  <span class="display">{{displayText}}</span>
+  <button class="clear-button hidden" (click)="onClearPressed()">Clear</button>
 </div>
 
 <button>
@@ -8,16 +8,16 @@
 </button>
 
 <div id="donation-view--number-input-container">
-  <span data-id="1">1</span>
-  <span data-id="2">2</span>
-  <span data-id="3">3</span>
-  <span data-id="4">4</span>
-  <span data-id="5">5</span>
-  <span data-id="6">6</span>
-  <span data-id="7">7</span>
-  <span data-id="8">8</span>
-  <span data-id="9">9</span>
-  <span data-id="0">0</span>
+  <span data-value="1" (click)="onKeypadClick($event)">1</span>
+  <span data-value="2" (click)="onKeypadClick($event)">2</span>
+  <span data-value="3" (click)="onKeypadClick($event)">3</span>
+  <span data-value="4" (click)="onKeypadClick($event)">4</span>
+  <span data-value="5" (click)="onKeypadClick($event)">5</span>
+  <span data-value="6" (click)="onKeypadClick($event)">6</span>
+  <span data-value="7" (click)="onKeypadClick($event)">7</span>
+  <span data-value="8" (click)="onKeypadClick($event)">8</span>
+  <span data-value="9" (click)="onKeypadClick($event)">9</span>
+  <span data-value="0" (click)="onKeypadClick($event)">0</span>
 </div>
 
 <button id="donation-view--donate-button">Donate</button>
