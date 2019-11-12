@@ -1,3 +1,10 @@
+
+
+#donation-view--number-input-display{
+  font-family:impact;
+  color:#6C72DD;
+}
+
 #donation-view--number-input-container {
   display: flex;
   flex-flow: row wrap;
@@ -8,7 +15,10 @@
   text-align: center;
   padding: 16px 0px;
   flex-basis: 33%;
-  font-size: 24px;
+  font-size: 35px;
+  background-color: white;
+  font-family:impact;
+  color:#6C72DD;
 }
 
 #donation-view--number-input-container > *:hover {
@@ -18,14 +28,20 @@
 #donation-view--donate-button {
   display: block;
   margin: 0 auto;
-  padding: 0.6em 3em;
-  background-color: #fff;
-  border: 2px solid #111;
+  padding: 0.7em 2em;
+  background-color:#6C72DD;
   font-size: 32px;
+  font-family: impact;
+  color:white;
+  border-radius: 50px;
 }
 
 #donation-view--donate-button:hover {
   cursor: pointer;
+  background-color: white;
+  color:#6C72DD;
+  border-color:#6C72DD;
+ 
 }
 
 #donation-view--instructions-button {
@@ -56,16 +72,7 @@ input {
     padding-left: .4em;
 }
 
-button {
-    margin-top: 20px;
-    font-family: Arial;
-    background-color: #eee;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    cursor: hand;
-}
+
 
 button:hover {
     background-color: #cfd8dc;
@@ -83,4 +90,12 @@ input {
 
 #additional_instructions {
   height: 10000px;
+}
+
+#box{
+  width: 200px;
+  padding: 20px;
+  margin: 40px;
+  box-shadow:2px 2px 25px;
+  border-radius:10px;
 }
