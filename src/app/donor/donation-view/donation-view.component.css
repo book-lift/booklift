@@ -36,12 +36,15 @@
   border-radius: 50px;
 }
 
-#donation-view--donate-button:hover {
+#donation-view--donate-button:active {
   cursor: pointer;
-  background-color: white;
-  color:#6C72DD;
-  border-color:#6C72DD;
+  transform: scale(.95);
+  
  
+}
+
+#num:active {
+  transform: scale(.95);
 }
 
 #donation-view--instructions-button {
