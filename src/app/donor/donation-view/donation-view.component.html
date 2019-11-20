@@ -1,37 +1,39 @@
-<div id="donation-view--number-input-display">
-  <span class="display">{{displayText}}</span>
-  <button class="clear-button hidden" (click)="onClearPressed()">Clear</button>
+<div>
+  <div class="background-underlay"></div>
+  <div id="donation-view--number-input-display">
+    <span class="display">{{displayText}}</span>
+    <button class="clear-button hidden" (click)="onClearPressed()">Clear</button>
+  </div>
+
+
+  <a routerLink="/dashboard">Back</a>
+
+  <div id="box">
+  <div id="donation-view--number-input-container">
+    <span data-value="1" (click)="onKeypadClick($event)">1</span>
+    <span data-value="2" (click)="onKeypadClick($event)">2</span>
+    <span data-value="3" (click)="onKeypadClick($event)">3</span>
+    <span data-value="4" (click)="onKeypadClick($event)">4</span>
+    <span data-value="5" (click)="onKeypadClick($event)">5</span>
+    <span data-value="6" (click)="onKeypadClick($event)">6</span>
+    <span data-value="7" (click)="onKeypadClick($event)">7</span>
+    <span data-value="8" (click)="onKeypadClick($event)">8</span>
+    <span data-value="9" (click)="onKeypadClick($event)">9</span>
+    <span data-value="0" (click)="onKeypadClick($event)">0</span>
+  </div>
+  </div>
+
+  <button id="donation-view--donate-button">Donate</button>
+
+  <!-- <button id="donation-view--instructions-button">+ Add instructions</button> -->
+  <app-donor-instructions></app-donor-instructions>
+
+  <!-- <div class="hover_bkgr_fricc">
+      <span class="helper"></span>
+      <div>
+          <div class="popupCloseButton">X</div>
+          <p>Add any HTML content<br />inside the popup box!</p>
+      </div>
+  </div> -->
 </div>
-
-
-<a routerLink="/dashboard">Back</a>
-
-<div id="box">
-<div id="donation-view--number-input-container">
-  <span data-value="1" (click)="onKeypadClick($event)">1</span>
-  <span data-value="2" (click)="onKeypadClick($event)">2</span>
-  <span data-value="3" (click)="onKeypadClick($event)">3</span>
-  <span data-value="4" (click)="onKeypadClick($event)">4</span>
-  <span data-value="5" (click)="onKeypadClick($event)">5</span>
-  <span data-value="6" (click)="onKeypadClick($event)">6</span>
-  <span data-value="7" (click)="onKeypadClick($event)">7</span>
-  <span data-value="8" (click)="onKeypadClick($event)">8</span>
-  <span data-value="9" (click)="onKeypadClick($event)">9</span>
-  <span data-value="0" (click)="onKeypadClick($event)">0</span>
-</div>
-</div>
-
-<button id="donation-view--donate-button">Donate</button>
-
-<!-- <button id="donation-view--instructions-button">+ Add instructions</button> -->
-<app-donor-instructions></app-donor-instructions>
-
-<!-- <div class="hover_bkgr_fricc">
-    <span class="helper"></span>
-    <div>
-        <div class="popupCloseButton">X</div>
-        <p>Add any HTML content<br />inside the popup box!</p>
-    </div>
-</div> -->
-
 

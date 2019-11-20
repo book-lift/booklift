@@ -4,8 +4,16 @@
   font-family: 'Mitr';
 }
 
+.background-underlay {
+  background-color: #6C72DD;
+  position: fixed;
+  height: 300px;
+  width: 100%;
+  z-index: -1;
+}
+
 #donation-view--number-input-display{
-  color:#6C72DD;
+  color:#FFFFFF;
 }
 
 #donation-view--number-input-container {
@@ -94,4 +102,5 @@ input {
   margin: 40px;
   box-shadow: 2px 2px 25px;
   border-radius: 10px;
+  background-color: #FFFFFF;
 }
