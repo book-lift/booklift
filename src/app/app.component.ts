@@ -10,20 +10,5 @@ import {Pickup} from './pickup';
 })
 export class AppComponent  {
   name = 'Angular';
-
-  // pickupInfo: Pickup[];
-
-  // constructor(private pickupinfoService: PickupInfoService) { }
   
-  // ngOnInit() {
-  // this.getPickup();
-  // }
-
-  // getPickup(): void{
-  //   this.pickupinfoService.getPickup()
-  //     .subscribe(pickupInfo => this.pickupInfo = pickupInfo.slice(1,3));
-  // }
-
-  
-
 }
