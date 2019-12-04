@@ -5,6 +5,7 @@
 }
 
 .background-underlay {
+  display: block;
   background-color: #6C72DD;
   position: fixed;
   height: 300px;
@@ -12,8 +13,21 @@
   z-index: -1;
 }
 
-#donation-view--number-input-display{
-  color:#FFFFFF;
+#donation-view--number-input-display {
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 3px #FFFFFF solid;
+}
+
+#donation-view--number-input-display .clear-button {
+  background: none;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 #donation-view--number-input-container {
@@ -29,7 +43,7 @@
   margin: 8px;
   font-size: 50px;
   /* background-color: #6C72DD; */
-  color:#6C72DD;
+  color: #6C72DD;
   font-weight: 800;
   border-radius: 100%;
 }
