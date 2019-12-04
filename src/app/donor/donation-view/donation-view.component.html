@@ -1,12 +1,11 @@
 <div>
+  <a routerLink="/dashboard">Back</a>
+
   <div class="background-underlay"></div>
   <div id="donation-view--number-input-display">
     <span class="display">{{displayText}}</span>
     <button class="clear-button hidden" (click)="onClearPressed()">Clear</button>
   </div>
-
-
-  <a routerLink="/dashboard">Back</a>
 
   <div id="box">
   <div id="donation-view--number-input-container">
@@ -21,9 +20,8 @@
     <span data-value="9" (click)="onKeypadClick($event)">9</span>
     <span data-value="0" (click)="onKeypadClick($event)">0</span>
   </div>
-  </div>
-
   <button id="donation-view--donate-button">Donate</button>
+</div>
 
   <!-- <button id="donation-view--instructions-button">+ Add instructions</button> -->
   <app-donor-instructions></app-donor-instructions>

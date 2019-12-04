@@ -20,6 +20,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-bottom: 32px;
 }
 
 #donation-view--number-input-container > * {
@@ -45,6 +46,10 @@
   font-size: 32px;
   color:white;
   border-radius: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -150px;
 }
 
 #donation-view--donate-button:active {
@@ -79,8 +84,13 @@ input {
     padding-left: .4em;
 }
 
+button {
+  border: none;
+}
+
 button:hover {
   background-color: #cfd8dc;
+  cursor: pointer;
 }
 
 button:disabled {
@@ -100,7 +110,7 @@ input {
 #box {
   padding: 20px;
   margin: 40px;
-  box-shadow: 2px 2px 25px;
+  box-shadow: 0px 2px 8px #777777;
   border-radius: 10px;
   background-color: #FFFFFF;
 }
