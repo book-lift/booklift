@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { NumericInput } from '@angular/numeric-keyboard'
-
-
 const INPUT_PLACEHOLDER_TEXT = "How many books would you like to donate?";
 
 @Component({
