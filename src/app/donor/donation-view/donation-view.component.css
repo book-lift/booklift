@@ -56,9 +56,9 @@
   display: block;
   margin: 0 auto;
   padding: 0.7em 2em;
-  background-color:#6C72DD;
+  background-color: #6C72DD;
   font-size: 32px;
-  color:white;
+  color: white;
   border-radius: 50px;
 }
 
@@ -79,21 +79,6 @@
   cursor: pointer;
 }
 
-
-label {
-    display: inline-block;
-    width: 3em;
-    margin: .5em 0;
-    color: #607D8B;
-    font-weight: bold;
-}
-
-input {
-    height: 2em;
-    font-size: 1em;
-    padding-left: .4em;
-}
-
 button {
   border: none;
 }
@@ -107,14 +92,6 @@ button:disabled {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
-}
-
-input {
-  width: 1000px;
-}
-
-#additional_instructions {
-  height: 10000px;
 }
 
 #box {
