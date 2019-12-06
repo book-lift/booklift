@@ -60,10 +60,6 @@
   font-size: 32px;
   color:white;
   border-radius: 50px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -300px;
 }
 
 #donation-view--donate-button:active {
