@@ -1,17 +1,21 @@
 
-<div  id="divshow" >
+<div id="divshow" >
   <button (click)="toggleShow()" type="checkbox" >+ Instructions</button>
+</div>
 
-  <div *ngIf="isShown" class="row container-fluid">
-  <h2>Pickup Info</h2>
-    <div>
-      <label>Address: </label>
-      <input placeholder="861 Regulus St. CA, 94404"/>
-    </div>
+<div *ngIf="isShown" class="donor-info">
+  <div class="donor-info-modal">
+    <div class="donor-info-modal-container">
+      <h2>Pickup Info</h2>
+      <div>
+        <label>Address: </label>
+        <input placeholder="861 Regulus St. CA, 94404"/>
+      </div>
 
-    <div class="additional_instructions">
-      <label>Additional Instructions: </label>
-      <input placeholder="e.g. Ring the doorbell to pickup books"/>
+      <div class="additional_instructions">
+        <label>Additional Instructions: </label>
+        <input placeholder="e.g. Ring the doorbell to pickup books"/>
+      </div>
     </div>
   </div>
 </div>

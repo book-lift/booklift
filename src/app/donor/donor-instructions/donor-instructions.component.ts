@@ -12,12 +12,12 @@ export class DonorInstructionsComponent implements OnInit {
   ngOnInit() {
   }
 
-  isShown: boolean = false ; // hidden by default
+  isShown: boolean = true ; // hidden by default
 
 
   toggleShow() {
 
-  this.isShown = ! this.isShown;
+  this.isShown = !this.isShown;
 
   }
 }

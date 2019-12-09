@@ -41,6 +41,15 @@ button:disabled {
   cursor: auto;
 }
 
-input {
-  width: 1000px;
+.donor-info-modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.donor-info-modal-container {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  width: 75%;
 }
