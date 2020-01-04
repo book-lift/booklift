@@ -40,7 +40,7 @@ const routes: Routes = [
   {path:'details/:taskID', component: DeliveryDetailsComponent},
   {path:'donor/book-entry', component: DonationViewComponent},
   {path:'driver/overview', component: DriverOverviewViewComponent},
-  {path:'donor/donate', component: NewDonationComponent}
+  {path:'donate', component: NewDonationComponent}
 ];
 
 @NgModule({
