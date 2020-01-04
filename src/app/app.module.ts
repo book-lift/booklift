@@ -29,6 +29,7 @@ import { DriverOverviewViewComponent } from './driver/driver-dash/view/view.comp
 import { GoalComponent } from './driver/driver-dash/goal/goal.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DonorInstructionsComponent } from './donor/donor-instructions/donor-instructions.component';
+import { NewDonationComponent } from './donor/new-donation/new-donation.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -38,7 +39,8 @@ const routes: Routes = [
   {path:'search', component: SearchComponent},
   {path:'details/:taskID', component: DeliveryDetailsComponent},
   {path:'donor/book-entry', component: DonationViewComponent},
-  {path:'driver/overview', component: DriverOverviewViewComponent}
+  {path:'driver/overview', component: DriverOverviewViewComponent},
+  {path:'donor/donate', component: NewDonationComponent}
 ];
 
 @NgModule({
@@ -69,6 +71,7 @@ const routes: Routes = [
     GoalComponent,
     DashboardComponent,
     DonorInstructionsComponent,
+    NewDonationComponent,
     ],
 
   bootstrap:    [ AppComponent ],
